@@ -11,5 +11,5 @@ int main()
         ++p;                 // 获取p的下一个位置
     }
     
-   	return 0;
+   	return 0
 }
