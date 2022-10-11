@@ -79,3 +79,18 @@ void SListInsertAfter(SLTNode* pos, SLTDataType x)
 {
       
 }
+//之前插入
+void SListInsertfront(SLTNode** pphead, SLTNode *pos,SLTNode x)
+{
+      assert(pphead);
+      assert(pos);
+      SLTNode *tail = *plist;
+      while(tail->next != pos)
+      {
+         tail = tail->next;
+      }
+       SLTNode *newnode = BuySListNode(x);
+       tail ->next = newnode;
+       newnode->next = pos;
+
+}
